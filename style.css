@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.cell {
+    border: 3px solid #333;
+    padding: 20px;
+    background-color: #FFF;
+}
+
+.cell img {
+    max-width: 100%;
+    height: auto;
+}
+
+.cell h3 {
+    margin-top: 10px;
+}
+
+.cell p {
+    margin-top: 5px;
+}
