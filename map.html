@@ -3,41 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Clubs at Berkeley - Retreats Map</title>
-    <link rel="stylesheet" href="map.css">
-    <!-- Include the Leaflet CSS file in the head section of your HTML -->
+    <title>Retreat Map</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
       integrity="sha512-xodZBNTC5n34GszT1P+ukxfBFlYCm9YwNRnZLHnSL1w9G7jHSOeHCPXX0CXdO+4x1DERu/eQGhqjqU-5lCaYLQ=="
       crossorigin=""/>
 </head>
 <body>
-
-<header>
-    <h1>Berkeley Tech Clubs - Retreat Map</h1>
-    <!-- You can add more header elements like navigation here -->
-</header>
-
-<main>
-    <!-- The map container -->
-    <div id="map" style="height: 500px; width: 100%;"></div>
-    <!-- You can add additional content here -->
-</main>
-
-<footer>
-    <p>© 2024 Berkeley Tech Clubs</p>
-    <!-- Footer content like contact info, credits, etc. -->
-</footer>
-
-<!-- Include Leaflet CSS -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
-
-<!-- Your other HTML elements here -->
-
-<!-- Include Leaflet JavaScript -->
-<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-
-<!-- Your custom script should come after Leaflet -->
-<script src="map.js"></script>
-
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">
+                <img src="images/Cal_logo.png" alt="Logo" style="height: 50px;"></a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/index.html" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/clubs.html" class="navbar__links">Clubs</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/map.html" class="navbar__links">Retreat Map</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="/" class="button">Log In</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <h1>Cal Clubs - Retreat Map</h1>
+        <!-- You can add more header elements like navigation here -->
+    </header>
+    
+    <main>
+        <!-- The map container -->
+        <div id="map" style="height: 500px; width: 100%;"></div>
+        <!-- You can add additional content here -->
+    </main>
+    
+    <!-- Include Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+    
+    <!-- Your other HTML elements here -->
+    
+    <!-- Include Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    
+    <!-- Your custom script should come after Leaflet -->
+    <script src="map.js"></script>
 </body>
 </html>
